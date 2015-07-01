@@ -1,0 +1,6 @@
+source ~/.profile
+nvm use v.0.10.37
+nvm ls
+
+
+npm start
