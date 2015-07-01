@@ -1,14 +1,14 @@
 var express = require('express');
 var router = express.Router();
 
-var quizController= require('../controllers/quiz_controller');
+var isoController= require('../controllers/consulta_controller');
 
 /* GET home page. */
 router.get('/', function(req, res) {
-  res.render('index', { title: 'Quiz' });
+  res.render('index', { title: 'isoBD' });
 });
 
-router.get('/quizes/question', quizController.question);
-router.get('/quizes/answer', quizController.answer);
-router.get('/author', quizController.author);
+router.get('/consulta/idG', isoController.idG);
+router.get('/consulta/lista', isoController.lista);
+router.get('/autor', isoController.autor);
 module.exports = router;
